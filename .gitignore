@@ -1,0 +1,28 @@
+data/
+.venv/
+__pycache__/
+*.pt
+*.pth
+.ipynb_checkpoints/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Keep the dataset out of GitHub
+data/*
+!data/.gitkeep
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Saved model files
+*.pt
+*.pth
+
+# Operating-system files
+.DS_Store
+Thumbs.db
