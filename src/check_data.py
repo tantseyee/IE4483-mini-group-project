@@ -1,6 +1,8 @@
 from pathlib import Path
 
-DATA_ROOT = Path(r"C:\Users\tseye\Datasets\IE4483\datasets")
+# CHANGE THIS BEFORE RUNNING: set DATA_ROOT to your own "datasets" folder
+# (the same path you set in data_pipeline.py).
+DATA_ROOT = Path(" ")
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
 
 
@@ -10,7 +12,6 @@ def count_images(folder: Path) -> int:
         for file in folder.rglob("*")
         if file.is_file() and file.suffix.lower() in IMAGE_EXTENSIONS
     )
-
 
 if not DATA_ROOT.exists():
     raise FileNotFoundError(f"Dataset folder not found: {DATA_ROOT}")
