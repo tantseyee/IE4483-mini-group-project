@@ -15,18 +15,18 @@ This project trains image classifiers to tell whether an image contains a dog or
 
 ### Code contributions
 
-| File | Tse Yee | Zi Lin |
-|---|---|---|
-| `src/check_data.py` | Written | Path set-up comment |
-| `src/data_pipeline.py` | Transforms, augmentation, training and validation datasets and loaders | Test-set loader (`TestDataset`), `PRETRAINED` switch for ImageNet settings, `__main__` guard, path set-up comments |
-| `src/baseline_cnn.py` | Baseline v1 architecture, balanced subset selection, training loop, initial 3-epoch run | 20-epoch training, full seeding, history CSV output, `PRETRAINED` check, 20-epoch run |
-| `src/baseline_cnn_v2.py` | | Written and run |
-| `src/train_resnet.py` | | Written; all six ResNet-18 runs |
-| `src/predict.py` | | Written; produced `submission.csv` |
-| `src/plot_results.py` | | Written |
-| `results/baseline_results.md` | Initial 3-epoch results | Updated with the 20-epoch v1 and v2 results |
-| `results/resnet_results.md` | | Written |
-| `README.md` | | Written |
+| File | Tse Yee | Zi Lin | Jaslyn
+|---|---|---|---|
+| `src/check_data.py` | Written | Path set-up comment | |
+| `src/data_pipeline.py` | Transforms, augmentation, training and validation datasets and loaders | Test-set loader (`TestDataset`), `PRETRAINED` switch for ImageNet settings, `__main__` guard, path set-up comments | |
+| `src/baseline_cnn.py` | Baseline v1 architecture, balanced subset selection, training loop, initial 3-epoch run | 20-epoch training, full seeding, history CSV output, `PRETRAINED` check, 20-epoch run | |
+| `src/baseline_cnn_v2.py` | | Written and run | |
+| `src/train_resnet.py` | | Written; all six ResNet-18 runs | |
+| `src/predict.py` | | Written; produced `submission.csv` | |
+| `src/plot_results.py` | | Written | |
+| `results/baseline_results.md` | Initial 3-epoch results | Updated with the 20-epoch v1 and v2 results | |
+| `results/resnet_results.md` | | Written | |
+| `README.md` | | Written | |
 
 Individual contributions are described in full in the report.
 
