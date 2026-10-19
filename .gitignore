@@ -1,10 +1,3 @@
-data/
-.venv/
-__pycache__/
-*.pt
-*.pth
-.ipynb_checkpoints/
-
 # Python temporary files
 __pycache__/
 *.py[cod]
@@ -13,13 +6,15 @@ __pycache__/
 .venv/
 
 # Keep the dataset out of GitHub
+datasets/
+/test/
 data/*
 !data/.gitkeep
 
 # Jupyter temporary files
 .ipynb_checkpoints/
 
-# Saved model files
+# Saved model files (about 45 MB each; share the main model separately)
 *.pt
 *.pth
 
