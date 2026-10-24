@@ -18,7 +18,7 @@ if not PRETRAINED:
     )
 
 
-SEED = 2026
+SEED = 42
 
 # True  -> same 2,000 + 2,000 training and 500 + 500 validation subset as the baselines (fair comparison, faster).
 # False -> full dataset: 20,000 training and 5,000 validation images.
