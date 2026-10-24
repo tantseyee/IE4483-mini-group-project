@@ -23,6 +23,7 @@ RESULTS_DIR = PROJECT_ROOT / "results"
 MODEL_FILE = RESULTS_DIR / f"{RUN_NAME}_best_seed{SEED}.pt"
 SUBMISSION_FILE = PROJECT_ROOT / "submission.csv"
 DETAILS_FILE = RESULTS_DIR / f"{RUN_NAME}_test_predictions.csv"
+SAMPLE_FILE = PROJECT_ROOT / "sampleSubmission.csv"
 
 device = torch.device("cpu")
 
@@ -75,6 +76,12 @@ assert len(predictions) == 500, f"Expected 500 predictions, got {len(predictions
 assert len(set(ids)) == len(ids), "Some image IDs appear more than once"
 assert set(labels) <= {0, 1}, "Labels must be 0 (cat) or 1 (dog)"
 
+if SAMPLE_FILE.exists():
+    with open(SAMPLE_FILE, newline="") as file:
+        sample_ids = [int(row["id"]) for row in csv.DictReader(file)]
+    assert ids == sample_ids, "Image IDs do not match sampleSubmission.csv"
+    print("IDs match sampleSubmission.csv")
+    
 with open(SUBMISSION_FILE, "w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["id", "label"])
