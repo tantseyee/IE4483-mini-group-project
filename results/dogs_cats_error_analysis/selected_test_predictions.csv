@@ -1,0 +1,11 @@
+id,label,predicted_class,probability_dog,confidence,group
+49,0,cat,0.4657,0.5343,Low confidence
+411,1,dog,0.6346,0.6346,Low confidence
+159,0,cat,0.3087,0.6913,Low confidence
+262,1,dog,0.709,0.709,Low confidence
+464,1,dog,0.7369,0.7369,Low confidence
+1,0,cat,0.0,1.0,High confidence
+4,1,dog,1.0,1.0,High confidence
+5,1,dog,1.0,1.0,High confidence
+6,0,cat,0.0,1.0,High confidence
+7,1,dog,1.0,1.0,High confidence
