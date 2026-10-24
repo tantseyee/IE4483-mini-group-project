@@ -7,8 +7,14 @@ import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader, Subset
 
-from data_pipeline import train_dataset, validation_dataset, BATCH_SIZE
+from data_pipeline import train_dataset, validation_dataset, BATCH_SIZE, PRETRAINED
 
+if PRETRAINED:
+    raise ValueError(
+        "The baseline CNN needs PRETRAINED = False. "
+        "Change it at the top of src/data_pipeline.py and run again."
+    )
+    
 # Use the same random selection each time, so results are easier to compare.
 SEED = 42
 random.seed(SEED)
