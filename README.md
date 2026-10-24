@@ -259,7 +259,7 @@ This reads the history CSVs in `results/` and saves six PNG figures to `results/
 | `fig5_seeds.png`            | Main ResNet-18 model over three seeds                                        |
 | `fig6_baselines.png`        | Baselines v1 and v2: training vs validation accuracy                         |
 
-### Step 7: Dogs vs. Cats error analysis (part e; Jaslyn Lee Xin Pei)
+### Step 7: Dogs vs. Cats error analysis
 
 Two complementary analyses were performed:
 
@@ -277,7 +277,7 @@ The seed-123 checkpoint recorded **98.70%** on its 1,000-image validation subset
 
 Saved outputs are in `results/dogs_cats_error_analysis/` and `results/dogs_cats_validation/`.
 
-### Step 8: CIFAR-10 and class imbalance (parts g and h; Jaslyn Lee Xin Pei)
+### Step 8: CIFAR-10 and class imbalance
 
 The CIFAR-10 experiments use 10 image classes and a separate CNN with a 10-class output layer. The balanced split contains 40,000 training images, 10,000 validation images and 10,000 test images. For the imbalanced experiments, the **cat (class 3)** and **dog (class 5)** training classes are reduced from 4,000 to 400 examples each; validation and test distributions remain unchanged. The two mitigation approaches are **class weighting** and **random oversampling**.
 
